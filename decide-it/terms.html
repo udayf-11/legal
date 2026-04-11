@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Decide It</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #818cf8;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            margin-right: 12px;
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        p, li {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: -1.5rem;
+            color: var(--primary);
+        }
+
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #818cf8;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>Terms of Service</h1>
+                <p class="last-updated">Last Updated: April 2024</p>
+            </header>
+
+            <main>
+                <section>
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By downloading or using the <strong>Decide It</strong> app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.</p>
+                </section>
+
+                <section>
+                    <h2>2. Use License</h2>
+                    <p>Permission is granted to use this app for personal, non-commercial use only. You are not allowed to copy, or modify the app, any part of the app, or our trademarks in any way.</p>
+                </section>
+
+                <section>
+                    <h2>3. Purpose and Disclaimer</h2>
+                    <p>Decide It is provided "as is" and is intended for entertainment and general decision-making purposes only.</p>
+                    <ul>
+                        <li><strong>Accuracy:</strong> The random generation tools (coins, dice, wheels) are designed for casual use and do not guarantee cryptographic or statistical perfection for high-stakes situations.</li>
+                        <li><strong>Liability:</strong> We are not responsible for any real-world outcomes, disputes, wagers, or consequences resulting from the use of the app's decision tools.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>4. Locally Stored Content</h2>
+                    <p>You are responsible for the content you enter into the app. Since data is stored locally, deleting the app or clearing its data will result in permanent loss of your custom lists and history.</p>
+                </section>
+
+                <section>
+                    <h2>5. Advertising</h2>
+                    <p>The app is supported by advertisements. By using the app, you acknowledge and consent to the display of ads provided by third-party networks.</p>
+                </section>
+
+                <section>
+                    <h2>6. Modifications to the App</h2>
+                    <p>We reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.</p>
+                </section>
+
+                <section>
+                    <h2>7. Termination</h2>
+                    <p>We may terminate or suspend your access to the app immediately, without prior notice or liability, for any reason whatsoever.</p>
+                </section>
+
+                <section>
+                    <h2>8. Governing Law</h2>
+                    <p>These terms and conditions are governed by and construed in accordance with the laws of India, and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+                </section>
+            </main>
+        </div>
+        <div class="footer">
+            &copy; 2024 Solverse. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
