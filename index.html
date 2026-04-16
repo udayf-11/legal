@@ -9,22 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1;
-            --bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: rgba(255, 255, 255, 0.1);
+            --primary: #2563eb;
+            --bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-muted: #4b5563;
+            --border: #e5e7eb;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg);
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
             color: var(--text-main);
             display: flex;
             align-items: center;
@@ -40,78 +36,70 @@
 
         header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
 
         h1 {
             font-size: 2.5rem;
             font-weight: 800;
-            background: linear-gradient(to right, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
+            color: #000;
+            margin-bottom: 0.5rem;
         }
 
         p { color: var(--text-muted); }
 
         .app-list {
             display: grid;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .app-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 2rem;
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 16px;
+            padding: 1.5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.2s;
             text-decoration: none;
             color: inherit;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         .app-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            background: rgba(30, 41, 59, 0.9);
+            border-color: var(--text-main);
+            background: #f9fafb;
+            transform: translateY(-2px);
         }
 
         .app-info {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .app-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, #818cf8, #c084fc);
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            background: #000;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             color: white;
         }
 
         .app-name {
             font-weight: 600;
-            font-size: 1.125rem;
+            font-size: 1.1rem;
         }
 
         .arrow {
-            color: var(--primary);
-            font-size: 1.5rem;
-            transition: transform 0.3s;
-        }
-
-        .app-card:hover .arrow {
-            transform: translateX(5px);
+            color: var(--text-muted);
+            font-size: 1.25rem;
         }
 
         .footer {
@@ -119,6 +107,8 @@
             text-align: center;
             color: var(--text-muted);
             font-size: 0.875rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
         }
     </style>
 </head>

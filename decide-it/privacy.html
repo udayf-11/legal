@@ -9,13 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: rgba(255, 255, 255, 0.1);
+            --bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-muted: #4b5563;
+            --primary: #2563eb;
+            --border: #e5e7eb;
         }
 
         * {
@@ -25,14 +23,10 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg);
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
             color: var(--text-main);
             line-height: 1.6;
-            min-height: 100vh;
             padding: 2rem 1rem;
         }
 
@@ -42,34 +36,25 @@
         }
 
         .card {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 3rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            padding: 0;
         }
 
         header {
-            margin-bottom: 3rem;
-            text-align: center;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
         }
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
+            font-size: 2.25rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #000;
         }
 
         .last-updated {
             color: var(--text-muted);
             font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
 
         section {
@@ -77,49 +62,30 @@
         }
 
         h2 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #818cf8;
-            display: flex;
-            align-items: center;
-        }
-
-        h2::before {
-            content: '';
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: var(--primary);
-            border-radius: 50%;
-            margin-right: 12px;
-            box-shadow: 0 0 10px var(--primary);
+            color: #000;
         }
 
         p, li {
-            color: var(--text-muted);
             margin-bottom: 1rem;
         }
 
         ul {
-            list-style: none;
             padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            list-style-type: disc;
         }
 
         li {
-            position: relative;
-            margin-bottom: 0.75rem;
-        }
-
-        li::before {
-            content: '→';
-            position: absolute;
-            left: -1.5rem;
-            color: var(--primary);
+            margin-bottom: 0.5rem;
         }
 
         .footer {
             margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
             text-align: center;
             font-size: 0.875rem;
             color: var(--text-muted);
@@ -127,21 +93,19 @@
 
         a {
             color: var(--primary);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: #818cf8;
             text-decoration: underline;
         }
 
+        a:hover {
+            color: #1d4ed8;
+        }
+
         @media (max-width: 640px) {
-            .card {
-                padding: 1.5rem;
+            body {
+                padding: 1.5rem 1rem;
             }
             h1 {
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
         }
     </style>
@@ -157,55 +121,67 @@
             <main>
                 <section>
                     <h2>1. Introduction</h2>
-                    <p>Welcome to <strong>Decide It</strong> ("we," "our," or "us"). We are committed to protecting your privacy. This Privacy Policy explains how your information is handled when you use our mobile application.</p>
+                    <p>Welcome to <strong>Decide It</strong> ("we", "our", or "us"). We are committed to protecting your privacy. This app is designed as a local-first application, meaning your data stays on your device.</p>
                 </section>
 
                 <section>
-                    <h2>2. Information Collection and Use</h2>
-                    <p>Decide It is designed as a local-first application. We do not collect, store, or transmit any personally identifiable information (PII) to our own servers.</p>
+                    <h2>2. Data Collection and Use</h2>
+                    <p>We do NOT collect, store, or transmit any personally identifiable information (PII) to our own servers.</p>
                     <ul>
-                        <li><strong>Custom Decisions & History:</strong> All your entered data, custom lists, and decision history are stored strictly on your device using local storage (Hive).</li>
-                        <li><strong>Device Settings:</strong> Your theme preferences and sound/haptic settings are also stored locally.</li>
+                        <li>Custom decisions, lists, and history are stored locally on your device (using Hive).</li>
+                        <li>App settings such as theme, sound, and haptic preferences are also stored locally.</li>
+                        <li>No account, login, or personal data is required to use the app.</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>3. Third-Party Services</h2>
-                    <p>Our app uses third-party services that may collect information used to identify you.</p>
+                    <p>Our app uses third-party services that may collect limited data:</p>
                     <ul>
                         <li>Google Play Services</li>
-                        <li><strong>AdMob:</strong> We use AdMob to serve advertisements. AdMob may collect and use your advertising ID and other non-personal identifiers to provide personalized or non-personalized ads.</li>
+                        <li>AdMob (Google AdMob)</li>
                     </ul>
+                    <p>AdMob may collect advertising identifiers and device-related information to provide personalized or non-personalized ads.</p>
+                    <p>Learn more: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+                    <p>We do not control how third-party services collect or use data.</p>
                 </section>
 
                 <section>
                     <h2>4. Log Data</h2>
-                    <p>In the event of an error or crash, the app may collect standard technical information (Log Data) to help us improve the service. This may include your device's IP address, device name, operating system version, and the time/date of your use.</p>
+                    <p>We do not collect log data or use analytics/crash reporting SDKs.</p>
                 </section>
 
                 <section>
                     <h2>5. Device Permissions</h2>
-                    <p>The app may request access to:</p>
+                    <p>The app may request the following permissions:</p>
                     <ul>
-                        <li><strong>Vibration:</strong> To provide haptic feedback.</li>
-                        <li><strong>Sensors:</strong> To enable "Shake to Roll/Toss" functionality.</li>
+                        <li><strong>Vibration</strong> -> for haptic feedback</li>
+                        <li><strong>Sensors</strong> -> for "Shake to Roll/Toss" functionality</li>
                     </ul>
-                    <p>These data are processed in real-time on your device and are never shared.</p>
+                    <p>All data from these features is processed in real-time on your device and is never stored or shared externally.</p>
                 </section>
 
                 <section>
-                    <h2>6. Children's Privacy</h2>
-                    <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+                    <h2>6. Data Deletion</h2>
+                    <p>Since all data is stored locally on your device:</p>
+                    <ul>
+                        <li>You can delete all app data at any time by uninstalling the app or clearing app storage.</li>
+                    </ul>
                 </section>
 
                 <section>
-                    <h2>7. Changes to This Privacy Policy</h2>
-                    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
+                    <h2>7. Children's Privacy</h2>
+                    <p>This app is not directed to children under the age of 13. We do not knowingly collect any personal information from children.</p>
                 </section>
 
                 <section>
-                    <h2>8. Contact Us</h2>
-                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:support.solverse@gmail.com">support.solverse@gmail.com</a></p>
+                    <h2>8. Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
+                </section>
+
+                <section>
+                    <h2>9. Contact Us</h2>
+                    <p>If you have any questions or suggestions, contact us at: <a href="mailto:support.solverse@gmail.com">support.solverse@gmail.com</a></p>
                 </section>
             </main>
         </div>
